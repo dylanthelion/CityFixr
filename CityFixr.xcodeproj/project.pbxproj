@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74CD9E081B5D77D000904FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD9E071B5D77D000904FBF /* AppDelegate.swift */; };
+		74CD9E0A1B5D77D000904FBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD9E091B5D77D000904FBF /* ViewController.swift */; };
+		74CD9E0D1B5D77D000904FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CD9E0B1B5D77D000904FBF /* Main.storyboard */; };
+		74CD9E0F1B5D77D000904FBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CD9E0E1B5D77D000904FBF /* Images.xcassets */; };
+		74CD9E121B5D77D000904FBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74CD9E101B5D77D000904FBF /* LaunchScreen.xib */; };
+		74CD9E1E1B5D77D000904FBF /* CityFixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD9E1D1B5D77D000904FBF /* CityFixrTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74CD9E181B5D77D000904FBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74CD9DFA1B5D77D000904FBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74CD9E011B5D77D000904FBF;
+			remoteInfo = CityFixr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74CD9E021B5D77D000904FBF /* CityFixr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityFixr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CD9E061B5D77D000904FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CD9E071B5D77D000904FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74CD9E091B5D77D000904FBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74CD9E0C1B5D77D000904FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74CD9E0E1B5D77D000904FBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		74CD9E111B5D77D000904FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		74CD9E171B5D77D000904FBF /* CityFixrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityFixrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CD9E1C1B5D77D000904FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74CD9E1D1B5D77D000904FBF /* CityFixrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFixrTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74CD9DFF1B5D77D000904FBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CD9E141B5D77D000904FBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74CD9DF91B5D77D000904FBF = {
+			isa = PBXGroup;
+			children = (
+				74CD9E041B5D77D000904FBF /* CityFixr */,
+				74CD9E1A1B5D77D000904FBF /* CityFixrTests */,
+				74CD9E031B5D77D000904FBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74CD9E031B5D77D000904FBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74CD9E021B5D77D000904FBF /* CityFixr.app */,
+				74CD9E171B5D77D000904FBF /* CityFixrTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74CD9E041B5D77D000904FBF /* CityFixr */ = {
+			isa = PBXGroup;
+			children = (
+				74CD9E071B5D77D000904FBF /* AppDelegate.swift */,
+				74CD9E091B5D77D000904FBF /* ViewController.swift */,
+				74CD9E0B1B5D77D000904FBF /* Main.storyboard */,
+				74CD9E0E1B5D77D000904FBF /* Images.xcassets */,
+				74CD9E101B5D77D000904FBF /* LaunchScreen.xib */,
+				74CD9E051B5D77D000904FBF /* Supporting Files */,
+			);
+			path = CityFixr;
+			sourceTree = "<group>";
+		};
+		74CD9E051B5D77D000904FBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74CD9E061B5D77D000904FBF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74CD9E1A1B5D77D000904FBF /* CityFixrTests */ = {
+			isa = PBXGroup;
+			children = (
+				74CD9E1D1B5D77D000904FBF /* CityFixrTests.swift */,
+				74CD9E1B1B5D77D000904FBF /* Supporting Files */,
+			);
+			path = CityFixrTests;
+			sourceTree = "<group>";
+		};
+		74CD9E1B1B5D77D000904FBF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74CD9E1C1B5D77D000904FBF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74CD9E011B5D77D000904FBF /* CityFixr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CD9E211B5D77D000904FBF /* Build configuration list for PBXNativeTarget "CityFixr" */;
+			buildPhases = (
+				74CD9DFE1B5D77D000904FBF /* Sources */,
+				74CD9DFF1B5D77D000904FBF /* Frameworks */,
+				74CD9E001B5D77D000904FBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CityFixr;
+			productName = CityFixr;
+			productReference = 74CD9E021B5D77D000904FBF /* CityFixr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74CD9E161B5D77D000904FBF /* CityFixrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74CD9E241B5D77D000904FBF /* Build configuration list for PBXNativeTarget "CityFixrTests" */;
+			buildPhases = (
+				74CD9E131B5D77D000904FBF /* Sources */,
+				74CD9E141B5D77D000904FBF /* Frameworks */,
+				74CD9E151B5D77D000904FBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74CD9E191B5D77D000904FBF /* PBXTargetDependency */,
+			);
+			name = CityFixrTests;
+			productName = CityFixrTests;
+			productReference = 74CD9E171B5D77D000904FBF /* CityFixrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74CD9DFA1B5D77D000904FBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Dylan;
+				TargetAttributes = {
+					74CD9E011B5D77D000904FBF = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					74CD9E161B5D77D000904FBF = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 74CD9E011B5D77D000904FBF;
+					};
+				};
+			};
+			buildConfigurationList = 74CD9DFD1B5D77D000904FBF /* Build configuration list for PBXProject "CityFixr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74CD9DF91B5D77D000904FBF;
+			productRefGroup = 74CD9E031B5D77D000904FBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74CD9E011B5D77D000904FBF /* CityFixr */,
+				74CD9E161B5D77D000904FBF /* CityFixrTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74CD9E001B5D77D000904FBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CD9E0D1B5D77D000904FBF /* Main.storyboard in Resources */,
+				74CD9E121B5D77D000904FBF /* LaunchScreen.xib in Resources */,
+				74CD9E0F1B5D77D000904FBF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CD9E151B5D77D000904FBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74CD9DFE1B5D77D000904FBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CD9E0A1B5D77D000904FBF /* ViewController.swift in Sources */,
+				74CD9E081B5D77D000904FBF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74CD9E131B5D77D000904FBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CD9E1E1B5D77D000904FBF /* CityFixrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74CD9E191B5D77D000904FBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74CD9E011B5D77D000904FBF /* CityFixr */;
+			targetProxy = 74CD9E181B5D77D000904FBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74CD9E0B1B5D77D000904FBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74CD9E0C1B5D77D000904FBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		74CD9E101B5D77D000904FBF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74CD9E111B5D77D000904FBF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74CD9E1F1B5D77D000904FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74CD9E201B5D77D000904FBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74CD9E221B5D77D000904FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CityFixr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74CD9E231B5D77D000904FBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CityFixr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		74CD9E251B5D77D000904FBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CityFixrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityFixr.app/CityFixr";
+			};
+			name = Debug;
+		};
+		74CD9E261B5D77D000904FBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CityFixrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CityFixr.app/CityFixr";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74CD9DFD1B5D77D000904FBF /* Build configuration list for PBXProject "CityFixr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CD9E1F1B5D77D000904FBF /* Debug */,
+				74CD9E201B5D77D000904FBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74CD9E211B5D77D000904FBF /* Build configuration list for PBXNativeTarget "CityFixr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CD9E221B5D77D000904FBF /* Debug */,
+				74CD9E231B5D77D000904FBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		74CD9E241B5D77D000904FBF /* Build configuration list for PBXNativeTarget "CityFixrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74CD9E251B5D77D000904FBF /* Debug */,
+				74CD9E261B5D77D000904FBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74CD9DFA1B5D77D000904FBF /* Project object */;
+}
