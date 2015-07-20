@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		74CD9E081B5D77D000904FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD9E071B5D77D000904FBF /* AppDelegate.swift */; };
-		74CD9E0A1B5D77D000904FBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD9E091B5D77D000904FBF /* ViewController.swift */; };
 		74CD9E0D1B5D77D000904FBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74CD9E0B1B5D77D000904FBF /* Main.storyboard */; };
 		74CD9E0F1B5D77D000904FBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74CD9E0E1B5D77D000904FBF /* Images.xcassets */; };
 		74CD9E121B5D77D000904FBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74CD9E101B5D77D000904FBF /* LaunchScreen.xib */; };
 		74CD9E1E1B5D77D000904FBF /* CityFixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD9E1D1B5D77D000904FBF /* CityFixrTests.swift */; };
+		74CD9E291B5D780B00904FBF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CD9E281B5D780B00904FBF /* FBSDKCoreKit.framework */; };
+		74CD9E2B1B5D782F00904FBF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CD9E2A1B5D782F00904FBF /* FBSDKLoginKit.framework */; };
+		F3593080A7CC0E341B9A20A9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06ED34ED5CD3AD898FC41CEE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +28,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06ED34ED5CD3AD898FC41CEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		535996862BFB654F66C0FAA1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		74CD9E021B5D77D000904FBF /* CityFixr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityFixr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CD9E061B5D77D000904FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74CD9E071B5D77D000904FBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74CD9E091B5D77D000904FBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74CD9E0C1B5D77D000904FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74CD9E0E1B5D77D000904FBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74CD9E111B5D77D000904FBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		74CD9E171B5D77D000904FBF /* CityFixrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityFixrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CD9E1C1B5D77D000904FBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74CD9E1D1B5D77D000904FBF /* CityFixrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFixrTests.swift; sourceTree = "<group>"; };
+		74CD9E281B5D780B00904FBF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		74CD9E2A1B5D782F00904FBF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		C94F8EE18CD1A333A3C04795 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CD9E2B1B5D782F00904FBF /* FBSDKLoginKit.framework in Frameworks */,
+				74CD9E291B5D780B00904FBF /* FBSDKCoreKit.framework in Frameworks */,
+				F3593080A7CC0E341B9A20A9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +68,11 @@
 		74CD9DF91B5D77D000904FBF = {
 			isa = PBXGroup;
 			children = (
+				74CD9E271B5D77E100904FBF /* Frameworks */,
 				74CD9E041B5D77D000904FBF /* CityFixr */,
 				74CD9E1A1B5D77D000904FBF /* CityFixrTests */,
 				74CD9E031B5D77D000904FBF /* Products */,
+				96E74D887CE7F174AA2DAE8F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				74CD9E071B5D77D000904FBF /* AppDelegate.swift */,
-				74CD9E091B5D77D000904FBF /* ViewController.swift */,
 				74CD9E0B1B5D77D000904FBF /* Main.storyboard */,
 				74CD9E0E1B5D77D000904FBF /* Images.xcassets */,
 				74CD9E101B5D77D000904FBF /* LaunchScreen.xib */,
@@ -112,6 +122,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		74CD9E271B5D77E100904FBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74CD9E2A1B5D782F00904FBF /* FBSDKLoginKit.framework */,
+				74CD9E281B5D780B00904FBF /* FBSDKCoreKit.framework */,
+				06ED34ED5CD3AD898FC41CEE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96E74D887CE7F174AA2DAE8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C94F8EE18CD1A333A3C04795 /* Pods.debug.xcconfig */,
+				535996862BFB654F66C0FAA1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74CD9E211B5D77D000904FBF /* Build configuration list for PBXNativeTarget "CityFixr" */;
 			buildPhases = (
+				C10BD66E35B79E971E26AE82 /* Check Pods Manifest.lock */,
 				74CD9DFE1B5D77D000904FBF /* Sources */,
 				74CD9DFF1B5D77D000904FBF /* Frameworks */,
 				74CD9E001B5D77D000904FBF /* Resources */,
+				88863DC1DE5187F0C0B2B16A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,12 +238,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88863DC1DE5187F0C0B2B16A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C10BD66E35B79E971E26AE82 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74CD9DFE1B5D77D000904FBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74CD9E0A1B5D77D000904FBF /* ViewController.swift in Sources */,
 				74CD9E081B5D77D000904FBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,21 +401,33 @@
 		};
 		74CD9E221B5D77D000904FBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C94F8EE18CD1A333A3C04795 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dillion/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = CityFixr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		74CD9E231B5D77D000904FBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535996862BFB654F66C0FAA1 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dillion/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = CityFixr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -409,6 +484,7 @@
 				74CD9E231B5D77D000904FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74CD9E241B5D77D000904FBF /* Build configuration list for PBXNativeTarget "CityFixrTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +493,7 @@
 				74CD9E261B5D77D000904FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
