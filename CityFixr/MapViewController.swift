@@ -16,6 +16,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     @IBOutlet weak var mapPin: UIImageView!
     
     let locationManager = GlobalLocationManager.appLocationManager
+    let issueManager = IssueManager.appIssueManager
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,20 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         map.addSubview(pinToTop)
         mapPin.removeFromSuperview()
         return map
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
+        
+        if(identifier! == "addIssue") {
+            if let _ = locationManager.location {
+                // assign map center coords to issue manager issue location
+                return true
+            } else {
+                return false
+            }
+        }
+        
+        return false
     }
     
 
