@@ -9,11 +9,15 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import CoreLocation
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, CLLocationManagerDelegate {
+    
+    let locationManager = GlobalLocationManager.appLocationManager
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.startLocating(self)
 
         // Do any additional setup after loading the view.
     }

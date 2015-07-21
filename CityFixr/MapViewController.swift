@@ -12,10 +12,19 @@ import GoogleMaps
 class MapViewController: UIViewController, GMSMapViewDelegate {
     
     @IBOutlet weak var mapContainerView: UIView!
+    
+    let locationManager = GlobalLocationManager.appLocationManager
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        buildMap(CLLocationCoordinate2DMake(45.0, -83.0))
+        if let _ = locationManager.location {
+            buildMap(locationManager.location!.coordinate)
+        } else {
+            print("Location not being updated in time. Construct proper error handling.")
+            buildMap(CLLocationCoordinate2DMake(45.0, -83.0))
+        }
+        
+        
 
         // Do any additional setup after loading the view.
     }
@@ -26,7 +35,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     }
     
     func buildMap(center : CLLocationCoordinate2D) {
-        let camera = GMSCameraPosition.cameraWithLatitude(center.latitude, longitude: center.longitude, zoom: 10)
+        let camera = GMSCameraPosition.cameraWithLatitude(center.latitude, longitude: center.longitude, zoom: 15)
         
         let myMapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         myMapView.delegate = self

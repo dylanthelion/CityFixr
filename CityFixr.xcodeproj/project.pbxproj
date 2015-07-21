@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743656FF1B5E0B6A001E8084 /* GlobalLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743656FE1B5E0B6A001E8084 /* GlobalLocationManager.swift */; };
 		745737881B5D80F000082B3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745737871B5D80EF00082B3B /* LoginViewController.swift */; };
 		7457378A1B5D822C00082B3B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745737891B5D822C00082B3B /* MapViewController.swift */; };
 		74CD9E081B5D77D000904FBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD9E071B5D77D000904FBF /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		06ED34ED5CD3AD898FC41CEE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		535996862BFB654F66C0FAA1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		743656FE1B5E0B6A001E8084 /* GlobalLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalLocationManager.swift; sourceTree = "<group>"; };
 		745737871B5D80EF00082B3B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		745737891B5D822C00082B3B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		74CD9E021B5D77D000904FBF /* CityFixr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityFixr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 				74CD9E0B1B5D77D000904FBF /* Main.storyboard */,
 				74CD9E0E1B5D77D000904FBF /* Images.xcassets */,
 				74CD9E101B5D77D000904FBF /* LaunchScreen.xib */,
+				743656FE1B5E0B6A001E8084 /* GlobalLocationManager.swift */,
 				74CD9E051B5D77D000904FBF /* Supporting Files */,
 			);
 			path = CityFixr;
@@ -285,6 +288,7 @@
 				745737881B5D80F000082B3B /* LoginViewController.swift in Sources */,
 				7457378A1B5D822C00082B3B /* MapViewController.swift in Sources */,
 				74CD9E081B5D77D000904FBF /* AppDelegate.swift in Sources */,
+				743656FF1B5E0B6A001E8084 /* GlobalLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
