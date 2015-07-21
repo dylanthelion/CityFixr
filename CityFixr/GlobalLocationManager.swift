@@ -13,8 +13,6 @@ private let globalManager = GlobalLocationManager()
 
 class GlobalLocationManager : CLLocationManager {
     
-    var currentLocation : CLLocation?
-    
     var isLocating : Bool = false
     
     override init() {

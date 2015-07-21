@@ -61,6 +61,11 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="96t-t3-taI">
                                 <rect key="frame" x="0.0" y="64" width="600" height="393"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin" translatesAutoresizingMaskIntoConstraints="NO" id="Wk1-96-G1U">
+                                        <rect key="frame" x="285" y="182" width="31" height="29"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -69,6 +74,7 @@
                     <navigationItem key="navigationItem" id="fhd-KT-4Md"/>
                     <connections>
                         <outlet property="mapContainerView" destination="96t-t3-taI" id="i7h-ry-fZa"/>
+                        <outlet property="mapPin" destination="Wk1-96-G1U" id="eBJ-3u-8rK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6V3-oS-Ze5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,4 +100,7 @@
             <point key="canvasLocation" x="-91" y="390"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Pin" width="96" height="117"/>
+    </resources>
 </document>

@@ -13,6 +13,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     @IBOutlet weak var mapContainerView: UIView!
     
+    @IBOutlet weak var mapPin: UIImageView!
+    
     let locationManager = GlobalLocationManager.appLocationManager
 
     override func viewDidLoad() {
@@ -39,9 +41,19 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         
         let myMapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         myMapView.delegate = self
-        myMapView.myLocationEnabled = true
+        myMapView.myLocationEnabled = false
         myMapView.frame = mapContainerView.frame
-        view.addSubview(myMapView)
+        view.addSubview(addPin(myMapView))
+        view.bringSubviewToFront(mapPin)
+    }
+    
+    func addPin(map: GMSMapView) -> GMSMapView {
+        let pinFrame = mapPin.frame
+        let pinToTop = UIImageView(frame: pinFrame)
+        pinToTop.image = UIImage(named: "Pin")
+        map.addSubview(pinToTop)
+        mapPin.removeFromSuperview()
+        return map
     }
     
 
