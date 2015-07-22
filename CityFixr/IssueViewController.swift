@@ -49,12 +49,13 @@ class IssueViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
+        
         if(didSelect == false) {
             // present alert
             return false
         }
         
-        if(identifier! == "addDescription") {
+        if(identifier! == "addDescription" || identifier! == "addPhoto") {
             // Check to make sure an issue has been selected
             return true
         }
@@ -62,6 +63,9 @@ class IssueViewController: UIViewController, UITableViewDataSource, UITableViewD
         return true
     }
     
+    @IBAction func submit(sender: AnyObject) {
+        
+    }
 
     /*
     // MARK: - Navigation

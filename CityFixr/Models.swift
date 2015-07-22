@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import UIKit
 
 enum Issues : Int {
     
@@ -34,6 +35,7 @@ class Issue {
     var issueType : Issues?
     var location : CLLocationCoordinate2D?
     var description : String?
+    var photo : UIImage?
     
     
 }

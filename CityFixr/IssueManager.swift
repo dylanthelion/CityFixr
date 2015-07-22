@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import CoreLocation
 
 private let globalManager = IssueManager()
 

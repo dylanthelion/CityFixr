@@ -18,6 +18,7 @@
 		74CD9E1E1B5D77D000904FBF /* CityFixrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD9E1D1B5D77D000904FBF /* CityFixrTests.swift */; };
 		74CD9E291B5D780B00904FBF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CD9E281B5D780B00904FBF /* FBSDKCoreKit.framework */; };
 		74CD9E2B1B5D782F00904FBF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CD9E2A1B5D782F00904FBF /* FBSDKLoginKit.framework */; };
+		74DF8F051B5F611100343018 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DF8F041B5F611100343018 /* PhotoViewController.swift */; };
 		74E488FD1B5E6101005924A6 /* IssueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E488FC1B5E6101005924A6 /* IssueViewController.swift */; };
 		74E488FF1B5E61D9005924A6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E488FE1B5E61D9005924A6 /* Models.swift */; };
 		74E489011B5E652D005924A6 /* IssueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E489001B5E652D005924A6 /* IssueManager.swift */; };
@@ -52,6 +53,7 @@
 		74CD9E1D1B5D77D000904FBF /* CityFixrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFixrTests.swift; sourceTree = "<group>"; };
 		74CD9E281B5D780B00904FBF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		74CD9E2A1B5D782F00904FBF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		74DF8F041B5F611100343018 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		74E488FC1B5E6101005924A6 /* IssueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueViewController.swift; sourceTree = "<group>"; };
 		74E488FE1B5E61D9005924A6 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		74E489001B5E652D005924A6 /* IssueManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssueManager.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				745737891B5D822C00082B3B /* MapViewController.swift */,
 				74E488FC1B5E6101005924A6 /* IssueViewController.swift */,
 				7445C7E21B5F15F00068C850 /* DescriptionViewController.swift */,
+				74DF8F041B5F611100343018 /* PhotoViewController.swift */,
 				74CD9E0B1B5D77D000904FBF /* Main.storyboard */,
 				74CD9E0E1B5D77D000904FBF /* Images.xcassets */,
 				74CD9E101B5D77D000904FBF /* LaunchScreen.xib */,
@@ -302,6 +305,7 @@
 				7457378A1B5D822C00082B3B /* MapViewController.swift in Sources */,
 				74E488FF1B5E61D9005924A6 /* Models.swift in Sources */,
 				74CD9E081B5D77D000904FBF /* AppDelegate.swift in Sources */,
+				74DF8F051B5F611100343018 /* PhotoViewController.swift in Sources */,
 				7445C7E31B5F15F00068C850 /* DescriptionViewController.swift in Sources */,
 				74E489011B5E652D005924A6 /* IssueManager.swift in Sources */,
 				743656FF1B5E0B6A001E8084 /* GlobalLocationManager.swift in Sources */,

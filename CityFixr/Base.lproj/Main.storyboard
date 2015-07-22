@@ -77,15 +77,6 @@
                                     <segue destination="aVG-Dw-ecZ" kind="show" identifier="addIssue" id="Q7s-Lm-k7G"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPD-9Z-hs9">
-                                <rect key="frame" x="406" y="496" width="127" height="30"/>
-                                <state key="normal" title="Add Description">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="XTr-oq-pGj" kind="show" identifier="addDescription" id="CaC-gO-OLP"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -144,6 +135,24 @@
                                     <segue destination="XTr-oq-pGj" kind="show" identifier="addDescription" id="f06-e1-e7z"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMQ-mF-5Fk">
+                                <rect key="frame" x="413" y="505" width="154" height="30"/>
+                                <state key="normal" title="Add Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sL2-zE-221" kind="show" identifier="addPhoto" id="DqY-ez-9hL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTF-L4-KID">
+                                <rect key="frame" x="476" y="555" width="81" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="aVG-Dw-ecZ" eventType="touchUpInside" id="bkg-Nq-UbE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -155,6 +164,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECy-iS-n5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2093" y="390"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="1og-hR-iYn">
+            <objects>
+                <viewController id="sL2-zE-221" customClass="PhotoViewController" customModule="CityFixr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9AU-8q-LGt"/>
+                        <viewControllerLayoutGuide type="bottom" id="4aw-od-Lbd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rgg-11-NoR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXA-TN-kAh">
+                                <rect key="frame" x="160" y="499" width="213" height="30"/>
+                                <state key="normal" title="Add Description">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XTr-oq-pGj" kind="show" identifier="addDescription" id="l8d-h8-wtU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L4-Lo-9X3">
+                                <rect key="frame" x="191" y="399" width="150" height="30"/>
+                                <state key="normal" title="Take Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto:" destination="sL2-zE-221" eventType="touchUpInside" id="aPS-up-xXz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnD-83-iB8">
+                                <rect key="frame" x="149" y="304" width="234" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="sL2-zE-221" eventType="touchUpInside" id="W3w-b0-Wrh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIZ-ka-4N2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1408" y="1156"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="cRI-pj-iuO">
@@ -177,6 +233,24 @@
                                     <outlet property="delegate" destination="XTr-oq-pGj" id="xhy-Fo-bxU"/>
                                 </connections>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gR-eU-jqI">
+                                <rect key="frame" x="99" y="493" width="177" height="30"/>
+                                <state key="normal" title="Add Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sL2-zE-221" kind="show" identifier="addPhoto" id="Rks-ia-Fsl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikY-OZ-PfJ">
+                                <rect key="frame" x="440" y="493" width="91" height="30"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="XTr-oq-pGj" eventType="touchUpInside" id="Bsu-9B-2Ze"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -211,6 +285,7 @@
         <image name="Pin" width="96" height="117"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CaC-gO-OLP"/>
+        <segue reference="f06-e1-e7z"/>
+        <segue reference="Rks-ia-Fsl"/>
     </inferredMetricsTieBreakers>
 </document>

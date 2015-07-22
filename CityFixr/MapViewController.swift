@@ -66,8 +66,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
             } else {
                 return false
             }
-        } else if(identifier! == "addDescription") {
-            return true
         }
         
         return false

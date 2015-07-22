@@ -1,19 +1,18 @@
 //
-//  DescriptionViewController.swift
+//  PhotoViewController.swift
 //  CityFixr
 //
-//  Created by Dylan on 7/21/15.
+//  Created by Dylan on 7/22/15.
 //  Copyright (c) 2015 Dylan. All rights reserved.
 //
 
 import UIKit
+import CoreImage
 
-class DescriptionViewController: UIViewController, UITextViewDelegate {
-
-    @IBOutlet weak var descriptionTextView: UITextView!
+class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let issueManager = IssueManager.appIssueManager
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,21 +24,30 @@ class DescriptionViewController: UIViewController, UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        view.endEditing(true)
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        picker.dismissViewControllerAnimated(true, completion: nil)
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
     }
+
+    @IBAction func takePhoto(sender: AnyObject) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .Camera
+        
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
     
     @IBAction func submit(sender: AnyObject) {
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
-        if(identifier! == "addPhoto") {
+        if(identifier! == "addDescription") {
             return true
         }
         
         return true
     }
-
     /*
     // MARK: - Navigation
 
