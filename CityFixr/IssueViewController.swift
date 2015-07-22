@@ -16,6 +16,7 @@ class IssueViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     let cellLabels : [String] = Issues.stringValues
     var didSelect : Bool = false
+    let issueManager = IssueManager.appIssueManager
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,20 @@ class IssueViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
+        if(didSelect == false) {
+            // present alert
+            return false
+        }
+        
+        if(identifier! == "addDescription") {
+            // Check to make sure an issue has been selected
+            return true
+        }
+        
+        return true
     }
     
 

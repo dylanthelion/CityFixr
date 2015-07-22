@@ -33,6 +33,7 @@ class Issue {
     
     var issueType : Issues?
     var location : CLLocationCoordinate2D?
+    var description : String?
     
     
 }

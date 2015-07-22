@@ -69,12 +69,21 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tC1-oT-Nqn">
-                                <rect key="frame" x="420" y="534" width="99" height="30"/>
+                                <rect key="frame" x="406" y="534" width="127" height="30"/>
                                 <state key="normal" title="Define Issue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="aVG-Dw-ecZ" kind="show" identifier="addIssue" id="Q7s-Lm-k7G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPD-9Z-hs9">
+                                <rect key="frame" x="406" y="496" width="127" height="30"/>
+                                <state key="normal" title="Add Description">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XTr-oq-pGj" kind="show" identifier="addDescription" id="CaC-gO-OLP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,6 +135,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2j-ee-wGN">
+                                <rect key="frame" x="25" y="555" width="122" height="30"/>
+                                <state key="normal" title="Add Description">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="XTr-oq-pGj" kind="show" identifier="addDescription" id="f06-e1-e7z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -137,6 +155,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECy-iS-n5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2093" y="390"/>
+        </scene>
+        <!--Description View Controller-->
+        <scene sceneID="cRI-pj-iuO">
+            <objects>
+                <viewController id="XTr-oq-pGj" customClass="DescriptionViewController" customModule="CityFixr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AIr-mz-Z9Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="EcW-gq-k3N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Djw-zR-qmK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eYC-y8-CuX">
+                                <rect key="frame" x="0.0" y="64" width="600" height="335"/>
+                                <color key="backgroundColor" red="0.95518549929999996" green="0.50045822380000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="XTr-oq-pGj" id="xhy-Fo-bxU"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="eYC-y8-CuX" id="FR5-gw-JK4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YYr-fm-CtB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2093" y="1101"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jK3-bF-Ymp">
@@ -160,4 +210,7 @@
     <resources>
         <image name="Pin" width="96" height="117"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="CaC-gO-OLP"/>
+    </inferredMetricsTieBreakers>
 </document>
