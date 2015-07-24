@@ -17,6 +17,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     let locationManager = GlobalLocationManager.appLocationManager
     let issueManager = IssueManager.appIssueManager
+    
+    var mapView : GMSMapView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +28,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
             print("Location not being updated in time. Construct proper error handling.")
             buildMap(CLLocationCoordinate2DMake(45.0, -83.0))
         }
-        
-        
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +44,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         myMapView.frame = mapContainerView.frame
         view.addSubview(addPin(myMapView))
         view.bringSubviewToFront(mapPin)
+        mapView = myMapView
     }
     
     func addPin(map: GMSMapView) -> GMSMapView {
@@ -60,15 +59,16 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         
         if(identifier! == "addIssue") {
-            if let _ = locationManager.location {
-                // assign map center coords to issue manager issue location
+            if let _ = locationManager.location, _ = mapView {
+                let center = mapView?.center
+                issueManager.issue.location = mapView!.projection.coordinateForPoint(center!)
                 return true
             } else {
                 return false
             }
         }
         
-        return false
+        return true
     }
     
 
