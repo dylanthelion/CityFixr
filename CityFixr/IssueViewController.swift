@@ -17,6 +17,7 @@ class IssueViewController: UIViewController, UITableViewDataSource, UITableViewD
     let cellLabels : [String] = Issues.stringValues
     var didSelect : Bool = false
     let issueManager = IssueManager.appIssueManager
+    var selectedIssue : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class IssueViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         issueLabel.text = cellLabels[indexPath.row]
+        selectedIssue = indexPath.row
         didSelect = true
     }
     
@@ -50,13 +52,17 @@ class IssueViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func shouldPerformSegueWithIdentifier(identifier: String?, sender: AnyObject?) -> Bool {
         
-        if(didSelect == false) {
-            // present alert
-            return false
-        }
-        
         if(identifier! == "addDescription" || identifier! == "addPhoto") {
-            // Check to make sure an issue has been selected
+            
+            if(didSelect == false) {
+                let alertController = UIAlertController(title: "Error", message: "Please select an issue type. If your issue is not included here, you can reach us at: dillion256@gmail.com", preferredStyle: .Alert)
+                let dismissAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                alertController.addAction(dismissAction)
+                self.presentViewController(alertController, animated: true, completion: nil)
+                return false
+            }
+            
+            issueManager.issue.issueType = Issues(rawValue: selectedIssue!)
             return true
         }
         
